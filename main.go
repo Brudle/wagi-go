@@ -9,7 +9,7 @@ import (
 
 func init() {
 	spin.Handle(func(w http.ResponseWriter, r *http.Request) {
-		fmt.Println("Content-Type: text/plain")
+		w.Header().Set("Content-Type", "text/plain")
 		fmt.Fprintln(w, "Hello, World!")
 	})
 }
