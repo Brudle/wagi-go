@@ -8,7 +8,7 @@ import (
 )
 
 func init() {
-	fmt.println("Content-Type: text/plain")
+	fmt.Println("Content-Type: text/plain")
 	spin.Handle(func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "Hello, World!")
 	})
