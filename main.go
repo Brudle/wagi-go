@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	spin.HandleRequest(func(w http.ResponseWriter, r *http.Request) {
+	spin.Handle(func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintln(w, "Hello, World!")
 	})
 }
